@@ -22,7 +22,7 @@ namespace GmodDotNet.Installer
 
         internal WebInstaller(string path, string platform, string tag, int type, Release release)
         {
-            _path = Path.Combine(path, "garrysmod\\lua");
+            _path = Path.Combine(path, "garrysmod", "lua");
             _release = release;
             _platform = platform.ToLower();
             _tag = tag;
@@ -74,7 +74,7 @@ namespace GmodDotNet.Installer
             Console.WriteLine();
             if (Program.Types[_type] == "Client" || Program.Types[_type] == "Both")
             {
-                string outPath = Path.Combine(FormatDir("autorun\\client"), "gmod-dot-net-client.lua");
+                string outPath = Path.Combine(FormatDir(Path.Combine("autorun", "client")), "gmod-dot-net-client.lua");
                 if(File.Exists(outPath))
                     File.Delete(outPath);
                 string url = GetAssetUrl($"gmod-dot-net-lua-client.{_tag}.lua");
@@ -86,7 +86,7 @@ namespace GmodDotNet.Installer
 
             if (Program.Types[_type] == "Server" || Program.Types[_type] == "Both")
             {
-                string outPath = Path.Combine(FormatDir("autorun\\server"), "gmod-dot-net-server.lua");
+                string outPath = Path.Combine(FormatDir(Path.Combine("autorun", "server")), "gmod-dot-net-server.lua");
                 if(File.Exists(outPath))
                     File.Delete(outPath);
                 string url = GetAssetUrl($"gmod-dot-net-lua-server.{_tag}.lua");
