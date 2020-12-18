@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmodDotNet.Installer", "src\GmodDotNet.Installer.csproj", "{9515FE74-33E9-44D6-9E31-D59FA80F6258}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01D987C5-8BC8-4885-B6C1-2F47EBBD914E}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9515FE74-33E9-44D6-9E31-D59FA80F6258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9515FE74-33E9-44D6-9E31-D59FA80F6258}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+EndGlobal
